@@ -18,7 +18,7 @@ def get_news():
     else:
             publication = query.lower()
     feed = feedparser.parse(RSS_FEEDS[publication])
-    return render_template("home.html",articles=feed['entries']
+    return render_template("home5.html",articles=feed['entries']
                            
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
